@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.View.SobreDesenvolvedor"
+             Title="SobreDesenvolvedor"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Red}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary >
+            <Thickness x:Key="Thick1" >0,30,0,0</Thickness>
+            
+            <Style x:Key="MeuStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="Caveat" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <VerticalStackLayout Padding="10,0"
+                         VerticalOptions="FillAndExpand">
+        <Label Text="Sobre o Desenvolvedor: "
+               FontFamily="Caveat"
+               FontSize="40"
+               TextColor="{StaticResource White}"
+               />
+        <Frame >
+            <VerticalStackLayout>
+            <Label Text="Kaique de Oliveira Leme, entusiasta da tecnologia e estudante no curso de Análise e Desenvolvimento de Sistemas na ETEC. Desde cedo, sempre foi curioso por computadores e isso o incentivou a seguir uma carreira na área de tecnologia da informação."
+                   Style="{StaticResource MeuStyle}"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"/>
+            
+            <Label Text="Habilidades: Java, PHP, HTML, CSS, JavaScript e MySQL."
+                   Style="{StaticResource MeuStyle}"
+                   FontSize="18"
+                   Margin="{StaticResource Thick1}"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label Text="Sobre o Projeto: "
+               FontFamily="Caveat"
+               FontSize="40"
+               TextColor="{StaticResource White}"
+               />
+        <Frame >
+            <VerticalStackLayout >
+                <Label Text="Aplicativo de Hotel para o curso de Análise e Desenvolvimento de Sistemas da ETEC em 2024."
+                       Style="{StaticResource MeuStyle}"
+                       FontSize="18"
+                       />
+                
+                
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar ao Inicio" BackgroundColor="{StaticResource Black}" Clicked="Button_Clicked" 
+                HorizontalOptions="CenterAndExpand"
+                Style="{StaticResource MeuStyle}"
+                FontSize="18"
+                Margin="40"
+                TextColor="{StaticResource White}"/>
+    </VerticalStackLayout>
+
+</ContentPage>
