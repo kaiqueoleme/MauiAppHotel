@@ -82,7 +82,9 @@
         <Button Text="Sobre o desenvolvedor" BackgroundColor="{StaticResource Red}" Clicked="Button_Clicked"
                 HorizontalOptions="CenterAndExpand"
                 Margin="40"
-                TextColor="{StaticResource White}"/>
+                TextColor="{StaticResource White}"
+                BorderColor="Black"
+                BorderWidth="1.5"/>
 
     </VerticalStackLayout>
 

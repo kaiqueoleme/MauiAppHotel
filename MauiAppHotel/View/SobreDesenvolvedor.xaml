@@ -24,14 +24,14 @@
                FontSize="40"
                TextColor="{StaticResource White}"
                />
-        <Frame >
+        <Frame BorderColor="{StaticResource White}">
             <VerticalStackLayout>
             <Label Text="Kaique de Oliveira Leme, entusiasta da tecnologia e estudante no curso de Análise e Desenvolvimento de Sistemas na ETEC. Desde cedo, sempre foi curioso por computadores e isso o incentivou a seguir uma carreira na área de tecnologia da informação."
                    Style="{StaticResource MeuStyle}"
                    FontSize="20"
                    HorizontalTextAlignment="Center"/>
             
-            <Label Text="Habilidades: Java, PHP, HTML, CSS, JavaScript e MySQL."
+            <Label Text="Aprendendo: Java, PHP, HTML, CSS, JavaScript e MySQL."
                    Style="{StaticResource MeuStyle}"
                    FontSize="18"
                    Margin="{StaticResource Thick1}"/>
@@ -43,14 +43,12 @@
                FontSize="40"
                TextColor="{StaticResource White}"
                />
-        <Frame >
+        <Frame BorderColor="{StaticResource White}">
             <VerticalStackLayout >
                 <Label Text="Aplicativo de Hotel para o curso de Análise e Desenvolvimento de Sistemas da ETEC em 2024."
                        Style="{StaticResource MeuStyle}"
                        FontSize="18"
                        />
-                
-                
             </VerticalStackLayout>
         </Frame>
 
@@ -59,7 +57,9 @@
                 Style="{StaticResource MeuStyle}"
                 FontSize="18"
                 Margin="40"
-                TextColor="{StaticResource White}"/>
+                TextColor="{StaticResource White}"
+                BorderColor="White"
+                BorderWidth="1.5"/>
     </VerticalStackLayout>
 
 </ContentPage>
