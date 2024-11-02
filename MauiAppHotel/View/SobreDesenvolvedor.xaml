@@ -8,8 +8,6 @@
 
     <ContentPage.Resources>
         <ResourceDictionary >
-            <Thickness x:Key="Thick1" >0,30,0,0</Thickness>
-            
             <Style x:Key="MeuStyle" TargetType="Label">
                 <Setter Property="FontFamily" Value="Caveat" />
             </Style>
@@ -34,7 +32,7 @@
             <Label Text="Aprendendo: Java, PHP, HTML, CSS, JavaScript e MySQL."
                    Style="{StaticResource MeuStyle}"
                    FontSize="18"
-                   Margin="{StaticResource Thick1}"/>
+                   Margin="0,30,0,0"/>
             </VerticalStackLayout>
         </Frame>
 
