@@ -19,7 +19,8 @@
                 HorizontalOptions="StartAndExpand"/>
         
         <VerticalStackLayout VerticalOptions="CenterAndExpand"
-                             Padding="10">
+                             Padding="10"
+                             Spacing="10">
             <Label 
                 Text="Cálculo da Diária"
                 FontFamily="Caveat"
@@ -60,26 +61,36 @@
                                Increment="1"/>
 
                     </Grid>
-
-                    <Label Text="Escolha sua Suíte" />
-
-                    <Picker x:Name="pck_quarto"
-                            Title="Selecione sua Acomodação"
-                            ItemDisplayBinding="{Binding Descricao}"/>
-
                     <Frame Padding="10"
                            Margin="10">
-                        <VerticalStackLayout >
-                            <Label Text="Período da Estadia"/>
+                        <VerticalStackLayout>
+                            <Label Text="Escolha sua Suíte"
+                                   TextTransform="Uppercase"
+                                   FontSize="Micro"
+                                   TextColor="{StaticResource Red}"/>
 
-                            <HorizontalStackLayout >
+                            <Picker x:Name="pck_quarto"
+                                    Title="Selecione sua Acomodação"
+                                    ItemDisplayBinding="{Binding Descricao}"/>
+                            </VerticalStackLayout>
+                    </Frame>
+                        
+                    <Frame Padding="10"
+                           Margin="10">
+                        <VerticalStackLayout Spacing="10">
+                            <Label Text="Período da Estadia"
+                                   TextTransform="Uppercase"
+                                   FontSize="Micro"
+                                   TextColor="{StaticResource Red}"/>
+
+                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                                 <Label Text="Check-in: " />
                                 <DatePicker x:Name="dtpk_checknin"
                                             DateSelected="dtpk_checknin_DateSelected"
                                             Format="dd/MM/yyyy" />
                             </HorizontalStackLayout>
 
-                            <HorizontalStackLayout >
+                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                                 <Label Text="Check-out" />
                                 <DatePicker x:Name="dtpk_checkout"
                                             Format="dd/MM/yyyy"/>
